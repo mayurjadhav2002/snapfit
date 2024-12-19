@@ -8,20 +8,15 @@ import {
 	NavbarMenuToggle,
 	NavbarMenu,
 	NavbarMenuItem,
-	Link,
 	Button,
 } from "@nextui-org/react";
 import Image from "next/image";
 import Logo from "@/components/misc/Logo";
+import Link from "next/link";
 export default function NavbarComponent() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-	const menuItems = [
-		"Join now",
-    "Features",
-    "How it Works",
-    "Advantages"
-	];
+	const menuItems = ["Join now", "Features", "How it Works", "Advantages"];
 
 	return (
 		<Navbar isBordered onMenuOpenChange={setIsMenuOpen}>
@@ -34,7 +29,7 @@ export default function NavbarComponent() {
 					<Logo />
 				</NavbarBrand>
 			</NavbarContent>
-{/* 
+			{/* 
 			<NavbarContent className='hidden  gap-8' justify='center'>
 				<NavbarItem>
 					<Link color='foreground' href='#Features'>
@@ -54,7 +49,11 @@ export default function NavbarComponent() {
 			</NavbarContent> */}
 			<NavbarContent justify='end'>
 				<NavbarItem>
-					<button href='#' className='button'>
+					<Link
+						target='_blank'
+						href='https://v2e3w97phs8.typeform.com/to/uByhmdNf?utm_source=website&utm_medium=nav'
+						className='button'
+					>
 						<span className='button__icon-wrapper'>
 							<svg
 								viewBox='0 0 14 15'
@@ -83,7 +82,7 @@ export default function NavbarComponent() {
 							</svg>
 						</span>
 						Join now
-					</button>
+					</Link>
 				</NavbarItem>
 			</NavbarContent>
 			<NavbarMenu>

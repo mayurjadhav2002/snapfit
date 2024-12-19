@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {FiPlay, FiPlayCircle} from "react-icons/fi";
 
@@ -24,17 +25,17 @@ function Hero() {
 						</p>
 
 						<div className='mt-10 sm:flex sm:items-center items-center sm:space-x-8'>
-							<a
-								href='#'
+							<Link
+								href='https://v2e3w97phs8.typeform.com/to/uByhmdNf?utm_source=website&utm_medium=hero'
+								target="_blank"
 								title=''
 								className='inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-600'
 								role='button'
 							>
-								{" "}
-								Start exploring{" "}
-							</a>
+								Start exploring
+							</Link>
 
-							<a
+							<Link
 								href='#'
 								title=''
 								className='inline-flex items-center mt-6 text-base font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80'
@@ -44,7 +45,7 @@ function Hero() {
 									className='text-red-500 mr-3'
 								/>
 								Watch video
-							</a>
+							</Link>
 						</div>
 					</div>
 

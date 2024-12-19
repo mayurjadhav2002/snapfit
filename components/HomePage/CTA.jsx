@@ -1,6 +1,8 @@
-import React from "react";
+import { useForm } from 'react-hook-form';
+import SubscribePage from '../misc/SubscribeForm';
 
 function CTA() {
+	
 	return (
 		<section className='py-20'>
 			<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -80,17 +82,7 @@ function CTA() {
 								</span>
 							</li>
 						</ul>
-						<div className='relative mt-8'>
-							<input
-								type='text'
-								name='email'
-								className='w-full py-2.5 px-5 h-14 border border-gray-300 bg-white shadow-sm rounded-full text-lg text-indigo-500 focus:outline-none placeholder:text-indigo-400 pr-16'
-								placeholder='Your mail id..'
-							/>
-							<button className='absolute right-1 top-1/2 transform -translate-y-1/2 h-auto py-3 px-7 bg-indigo-600 shadow-sm rounded-full text-white font-semibold'>
-								Subscribe
-							</button>
-						</div>
+						<SubscribePage/>
 					</div>
 				</div>
 			</div>
